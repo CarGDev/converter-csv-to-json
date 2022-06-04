@@ -11,7 +11,7 @@
     "csv",
     "converter"
   ],
-  "author": "carlos arturo",
+  "author": "Carlos Gutierrez <ingecarlos.gutierrez@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
