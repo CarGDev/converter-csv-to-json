@@ -1,4 +1,5 @@
 const fs = require('fs')
+const path = require('path')
 
 const csvToJson = (csv) => {
   const lines = csv.split(/\r\n|\n/)
@@ -17,6 +18,8 @@ const csvToJson = (csv) => {
 }
 
 exports.readFile = async (pathFile) => {
+  const checkExt = path.extname(pathFile)
+  if (checkExt !== '.csv') throw new Error('Wrong extension file')
   const result = new Promise((resolve, reject) => {
     fs.readFile(`${pathFile}`, 'utf8', (err, data) => {
       if (err) {
