@@ -1,0 +1,26 @@
+{
+  "name": "converter-csv-to-json",
+  "version": "1.0.0",
+  "description": "convert csv file to json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "json",
+    "csv",
+    "converter"
+  ],
+  "author": "carlos arturo",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "husky": "^4.3.8"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
