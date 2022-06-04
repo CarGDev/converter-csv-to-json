@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 const csvToJson = (csv) => {
-  const lines = csv.split('\n')
+  const lines = csv.split(/\r\n|\n/)
   const result = [];
   const headers = lines[0].split(',');
   const contents = lines.slice(1, lines.length - 1)
