@@ -12,6 +12,7 @@
     "converter"
   ],
   "author": "Carlos Gutierrez <ingecarlos.gutierrez@gmail.com>",
+  "homepage": "https://github.com/CarGDev/converter-csv-to-json",
   "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
