@@ -6,8 +6,8 @@ const csvToJson = (csv) => {
   const result = [];
   const headers = lines[0].split(',');
   const contents = lines.slice(1, lines.length - 1)
-  const obj = {};
   for (const content of contents) {
+    const obj = {};
     const currentline = content.split(',');
     for (let j = 0; j < headers.length; j++) {
       obj[headers[j]] = currentline[j];
