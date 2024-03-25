@@ -1,6 +1,6 @@
 {
   "name": "async-convert-csv-to-json",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "description": "convert csv file to json",
   "main": "index.js",
   "scripts": {
